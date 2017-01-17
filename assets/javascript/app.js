@@ -2,7 +2,7 @@ $(document).ready(function(){
 // var topics = ["Villains", "Super Heroes"];
 
 var app = {
-	topics: ["Villains", "Super Heroes"],
+	topics: ["John Snow", "Daenarys Targaryen", "Arya Stark", "Tyrion Lannister"],
 
 	start: function(){
 		$("#buttons").empty();
@@ -14,6 +14,8 @@ var app = {
 			$(button).text(this.topics[i]);
 			$(button).val(this.topics[i]);
 			$("#buttons").append(button);
+			$("#buttons").append(" | ");
+
 		}
 
 		$("#search").html("Add Button<br>");
@@ -26,8 +28,10 @@ var app = {
 
 		var submit = $("<button>");
 		submit.attr("id", "submit");
-		submit.text("Submit");
+		submit.text("Add");
 		$("#search").append(submit);
+
+		
 
 	},
 	search: function(value){
@@ -38,6 +42,7 @@ var app = {
       		url: queryURL,
       		method: 'GET'
     	}).done(function(response) {
+    		console.log(response);
     		var results = response.data;
 
     		for (var i = 0; i < results.length; i++) {

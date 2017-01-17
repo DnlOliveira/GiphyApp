@@ -1,0 +1,19 @@
+#wrap1{
+	width: 100%;
+	height: 50px;
+}
+#buttons{
+	width: 70%;
+	height: 50px;
+	margin: auto;
+}
+#wrap2{
+	width: 100%;
+	height: 100px;
+}
+#search,
+#display{
+	width: 70%;
+	height: 100px;
+	margin: auto;
+}
