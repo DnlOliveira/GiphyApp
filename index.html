@@ -9,19 +9,25 @@
 	<!-- JavaScript file -->
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
+	<!-- Here we include bootstrap. This will be made available to all of the generated HTML/JS that React generates-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 	<!-- CSS file -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div id="wrap1">
-		<div id="buttons"></div>
+	<div class="row" id="wrap1">
+		<div class="col-md-12" id="buttons"></div>
 	</div>
 
 	<div id="test"></div>
 
-	<div id="wrap2">
-		<div id="search"></div>
-		<dvi id="display"></dvi>
+	<div class="row">
+		<div class="col-md-12" id="search"></div>
+	</div>
+
+	<div class="row" id="wrap2">
+		<div class="col-md-12" id="display"></div>
 	</div>
 </body>
 </html>

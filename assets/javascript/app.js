@@ -1,5 +1,4 @@
 $(document).ready(function(){
-// var topics = ["Villains", "Super Heroes"];
 
 var app = {
 	topics: ["John Snow", "Daenarys Targaryen", "Arya Stark", "Tyrion Lannister"],
@@ -35,7 +34,7 @@ var app = {
 
 	},
 	search: function(value){
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         value + "&api_key=dc6zaTOxFJmzC&limit=10";
 
     	$.ajax({
